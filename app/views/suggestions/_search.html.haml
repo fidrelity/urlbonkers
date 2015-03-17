@@ -1,0 +1,5 @@
+= form_for @suggestion do |f|
+  .input-group
+    = f.text_field :buzzword, placeholder: "Your buzzword goes here...", required: true, class: "form-control input-lg"
+    .input-group-btn
+      = f.submit "Go bonkers!", class: 'btn btn-lg btn-default'

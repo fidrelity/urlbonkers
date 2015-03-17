@@ -1,0 +1,19 @@
+.row
+  .col-md-6.col-md-offset-3
+    %h2 Your bonkers domain shall be...
+    .text-center
+      %h1.well= @suggestion.result
+      = link_to buy_domain_url(@suggestion.result), target: "_blank" do
+        .btn.btn-primary.btn-lg
+          I'm bonkers - buy it!
+      .small
+        (Yes, it's available)
+%hr
+.row
+  .col-md-6.col-md-offset-3
+    %h2
+      Not happy? Try again...
+
+.row
+  .col-md-6.col-md-offset-3
+    = render partial: "search"
