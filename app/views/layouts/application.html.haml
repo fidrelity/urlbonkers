@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Domains gone bonkers
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    %link{href: 'http://fonts.googleapis.com/css?family=Lobster', rel: 'stylesheet', type: 'text/css' }
+    = csrf_meta_tags
+  %body
+    .navbar.navbar-static
+      .container
+        .navbar-header
+          %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+          .navbar-brand{:href => "#"}
+            %strong
+              URLs? Bonkers!
+            The stupid way to get your domain names...
+    .container
+      = yield
