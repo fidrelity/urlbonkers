@@ -13,6 +13,7 @@ gem 'haml'
 gem 'haml-rails'
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem 'railsstrap'
+gem 'whois', '~> 3.5.8'
 
 group :development, :test do
   gem 'byebug'
